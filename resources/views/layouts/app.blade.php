@@ -25,6 +25,7 @@
         <nav>
             <span class="brand">Evolusi PL</span>
             <a href="{{ route('home') }}">Beranda</a>
+            <a href="{{ route('about') }}">Tentang</a>
         </nav>
     </header>
     <main>@yield('content')</main>
