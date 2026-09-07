@@ -11,8 +11,11 @@ Aplikasi web sederhana berbasis **Laravel 12** sebagai tugas mata kuliah
 
 ## Kebutuhan Sistem
 
-- PHP 8.2 atau lebih baru (ekstensi `pdo_sqlite` dan `sqlite3` aktif)
+- PHP 8.2 atau lebih baru
 - Composer 2.x
+
+Aplikasi ini tidak memerlukan basis data. Sesi dan cache disimpan pada berkas,
+sehingga tidak ada langkah migrasi yang perlu dijalankan.
 
 ## Cara Menjalankan
 
