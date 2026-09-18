@@ -12,7 +12,7 @@ git pull origin main
 # 3 · Pasang dependensi (tanpa paket dev)
 composer install --no-dev --optimize-autoloader
 
-# 4 · Ubah skema basis data. --force = jangan tanya
+# 4 · Ubah skema basis data. --force
 php artisan migrate --force
 
 # 5 · Bangun ulang cache dengan kode & config baru
