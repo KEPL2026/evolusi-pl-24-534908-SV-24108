@@ -11,11 +11,11 @@ Aplikasi web sederhana berbasis **Laravel 12** sebagai tugas mata kuliah
 
 ## Kebutuhan Sistem
 
-- PHP 8.2 atau lebih baru
+- PHP 8.2 atau lebih baru, dengan ekstensi `pdo_sqlite`
 - Composer 2.x
 
-Aplikasi ini tidak memerlukan basis data. Sesi dan cache disimpan pada berkas,
-sehingga tidak ada langkah migrasi yang perlu dijalankan.
+Aplikasi berisi fitur CRUD **Peminjaman Buku** (satu tabel `peminjaman`) dengan
+basis data SQLite. Sesi dan cache tetap disimpan pada berkas.
 
 ## Cara Menjalankan
 
@@ -27,10 +27,14 @@ composer install
 cp .env.example .env
 php artisan key:generate
 
+touch database/database.sqlite
+php artisan migrate
+
 php artisan serve
 ```
 
-Aplikasi dapat diakses pada `http://127.0.0.1:8000`.
+Aplikasi dapat diakses pada `http://127.0.0.1:8000`, dan fitur peminjaman buku
+pada `http://127.0.0.1:8000/peminjaman`.
 
 ## Menjalankan Pengujian
 
