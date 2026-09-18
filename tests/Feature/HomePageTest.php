@@ -13,6 +13,6 @@ class HomePageTest extends TestCase
 
     public function test_halaman_beranda_menampilkan_judul_aplikasi(): void
     {
-        $this->get('/')->assertSee('Aplikasi Web Sederhana');
+        $this->get('/')->assertSee('Judul Yang Salah');
     }
 }
